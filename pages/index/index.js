@@ -9,7 +9,6 @@ Page({
   },
   onLoad:function(options){
     if (!app.globalData.userInfo) {
-      app.getUserInfo();
     }else{
       console.log(app.globalData.userInfo);
       // this.setData({

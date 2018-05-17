@@ -1,0 +1,23 @@
+<!--pages/mark/mark.wxml-->
+<view class='mark-body'>
+  
+  <!-- 上部信息 -->
+  <view class='body-header'>
+    <!-- 物品名称 -->
+    <view class='header-name'>
+      <label class='name'>物品名称</label>
+      <input text="text" class='item-name'></input>
+      <label class='tip'>8个字以内</label>
+    </view>
+
+    <!-- 物品描述 -->
+    <view class='header-body'>
+      
+    </view>
+  </view>
+
+  <!-- 下部信息 -->
+  <view class='body-bottom'>
+  </view>
+
+</view>

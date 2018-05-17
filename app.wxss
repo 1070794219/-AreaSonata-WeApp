@@ -10,5 +10,8 @@
 } 
 
 Page{
-  background: #ececec
+  background: #ececec;
+  font-weight: normal;
+	font-stretch: normal;
+  font-family: MicrosoftYaHei;
 }

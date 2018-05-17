@@ -1,0 +1,64 @@
+/* pages/mark/mark.wxss */
+
+.header-name,.header-body{
+    border-bottom: 2rpx lightgray solid;
+}
+view{
+  width: 750rpx;
+}
+
+.body-header{
+  height: 695rpx;
+  background: white
+}
+
+.body-header view{
+  width: 700rpx;
+  margin: 0 25rpx;
+}
+
+.body-bottom{
+  height: 210rpx;
+  margin-top: 20rpx;
+  background: white;
+}
+
+.header-name{
+  width: 700rpx;
+  margin: 0 25rpx;
+  height: 135rpx;
+}
+
+.header-name .name {
+  display: block;
+	width: 600rpx;
+	height: 50rpx;
+  padding: 30rpx 0 0 10rpx;
+	font-size: 30rpx;
+	letter-spacing: 1rpx;
+	color: #999999;
+}
+
+.item-name{
+  width: 480rpx;
+  float: left;
+  padding-left: 10rpx;
+}
+
+.header-name .tip {
+  display: block;
+  float: left;
+  width: 180rpx;
+	height: 50rpx;
+  padding-right: 20rpx;
+  line-height: 50rpx;
+	font-size: 24rpx;
+	letter-spacing: 1rpx;
+	color: #999999;
+  text-align: right
+}
+
+.header-body{
+  height: 340rpx;
+  background: red
+}

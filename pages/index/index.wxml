@@ -4,10 +4,12 @@
 </view>
 
 <view class='index-list'>
-  <view class='index-list-cell'>
-    <image src='/images/icon/1.png'></image>
-    <label>标记物品</label>
-  </view>
+  <navigator url="/pages/mark/mark">
+    <view class='index-list-cell'>
+      <image src='/images/icon/1.png'></image>
+      <label>标记物品</label>
+    </view>
+  </navigator>
   <view class='index-list-cell'>
     <image src='/images/icon/2.png'></image>
     <label>消息列表</label>
