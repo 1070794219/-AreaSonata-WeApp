@@ -15,3 +15,13 @@ Page{
 	font-stretch: normal;
   font-family: MicrosoftYaHei;
 }
+
+.f-l{
+  display: block;
+  float: left;
+}
+
+.f-r{
+  display: block;
+  float: right;
+}

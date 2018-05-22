@@ -12,12 +12,43 @@
 
     <!-- 物品描述 -->
     <view class='header-body'>
-      
+      <textarea placeholder="留言要求：上传照片不得少于1张照片" placeholder-style="color:#ff835b;"  />
+    </view>
+    
+    <!-- 上传照片 -->
+    <view class='header-image'>
+      <view class='add'>
+        <image src='/images/icon/照片.jpg'></image>
+      </view>
     </view>
   </view>
 
   <!-- 下部信息 -->
   <view class='body-bottom'>
+    <view class='bottom-name'>
+      <label class='name'>物品状态</label>
+    </view>
+    <view class='bottom-status'>
+      <label>正常</label>
+      <label>丢失</label>
+      <label>被发现</label>
+    </view>
   </view>
+</view>
 
+<!-- 底部意见反馈 -->
+<view class='mark-bottom'>
+  <view class='tip-icon'>
+    <!-- <image src='/images/icon/左.png' class='f-l'></image> -->
+  </view>
+  <view class='tip-url'><label>意见反馈</label></view>
+  <view class='tip-icon'>
+    <!-- <image src='/images/icon/右.png' class='f-r'></image> -->
+  </view>
+</view>
+
+<!-- 底部按钮 -->
+<view class='bottom-btns'>
+  <view class='cancel'>取消</view>
+  <view class='submit'>标记完成</view>
 </view>

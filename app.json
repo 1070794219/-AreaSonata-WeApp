@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/mark/mark",
+    "pages/user/index",
     "pages/logs/logs"
   ],
   "window": {

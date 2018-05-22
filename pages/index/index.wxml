@@ -18,8 +18,10 @@
     <image src='/images/icon/3.png'></image>
     <label>蝴蝶商城</label>
   </view>
-  <view class='index-list-cell'>
-    <image src="{{ headimg === '' ? '/images/icon/1.png' : headimg}}" class='headimg'></image>
-    <label>{{ nickname === '' ? '请登录' : nickname}}</label>
-  </view>
+  <navigator url="/pages/user/index">
+    <view class='index-list-cell'>
+      <image src="{{ headimg === '' ? '/images/icon/1.png' : headimg}}" class='headimg'></image>
+      <label>{{ nickname === '' ? '请登录' : nickname}}</label>
+    </view>
+  </navigator>
 </view>

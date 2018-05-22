@@ -1,0 +1,50 @@
+<!--pages/user/index.wxml-->
+<view class='user-header bg-color'>
+  <image class='header-img'></image>
+</view>
+
+<!-- cell -->
+<view class='user-table'>
+  <view class="separate"></view>
+  <view class="person-list">
+    <view class="list-item">
+      <image class="item-image" src="/images/icon/个人.jpg"></image>
+      <text class="item-text">个人信息</text>
+      <image class="item-right" src='/images/icon/nav-right.png'></image>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="/images/icon/扫码.jpg"></image>
+      <text class="item-text">我的寻物码</text>
+      <image class="item-right" src='/images/icon/nav-right.png'></image>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="/images/icon/标记过的.jpg"></image>
+      <text class="item-text">我标记过的物品</text>
+      <image class="item-right" src='/images/icon/nav-right.png'></image>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="/images/icon/了解.jpg"></image>
+      <text class="item-text">了解蝴蝶寻物</text>
+      <image class="item-right" src='/images/icon/nav-right.png'></image>
+    </view>
+  </view>
+
+  <view class="separate"></view>
+  <view class="person-list">
+    <view class="list-item">
+      <image class="item-image" src="/images/icon/意见.jpg"></image>
+      <text class="item-text">意见反馈</text>
+      <image class="item-right" src='/images/icon/nav-right.png'></image>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="/images/icon/设置.jpg"></image>
+      <text class="item-text">设置</text>
+      <image class="item-right" src='/images/icon/nav-right.png'></image>
+    </view>
+  </view>
+
+</view>
