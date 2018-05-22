@@ -60,3 +60,8 @@
 .separate{
   height: 30rpx;
 }
+
+.login-btn{
+  background: white;
+  border-width: 0rpx;
+}

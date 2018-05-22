@@ -14,7 +14,7 @@
     <image src='/images/icon/2.png'></image>
     <label>消息列表</label>
   </view>
-  <view class='index-list-cell'>
+  <view class='index-list-cell' bindtap='shopTap'>
     <image src='/images/icon/3.png'></image>
     <label>蝴蝶商城</label>
   </view>

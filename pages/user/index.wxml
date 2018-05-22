@@ -1,6 +1,6 @@
 <!--pages/user/index.wxml-->
 <view class='user-header bg-color'>
-  <image class='header-img'></image>
+  <image class='header-img' src="{{ headimg }}"></image>
 </view>
 
 <!-- cell -->
@@ -47,4 +47,8 @@
     </view>
   </view>
 
+  <view class="separate"></view>
+  <block wx:if="{{ !isLogin }}">
+    <button open-type="getUserInfo" class='login-btn' bindgetuserinfo="loginFunc">登录</button>
+  </block>
 </view>
