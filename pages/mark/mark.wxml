@@ -18,7 +18,7 @@
     <!-- 上传照片 -->
     <view class='header-image'>
       <view class='add'>
-        <image src='/images/icon/照片.jpg'></image>
+        <image src='/images/icon/zhaopian.jpg'></image>
       </view>
     </view>
   </view>

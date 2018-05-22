@@ -21,16 +21,17 @@
 
 /* 列表 */
 .person-list {
-  display: flex;
+   display: flex; 
   flex-direction: column;
   align-items: left;
   background: white;
 }
 .list-item {
-  display: flex;
+  display: flex; 
   flex-direction: row;
   align-items: center;
   height: 95rpx;
+  width: 100%;
 }
 .item-image {
   width: 40rpx;
@@ -40,19 +41,20 @@
 .item-right{
   width: 32rpx;
   height: 32rpx;
-  position: absolute;
-  right: 20rpx;
+  margin: 31.5rpx 20rpx;
 }
 .item-text {
   color: black;
+  display: inline-block;
   font-size: 28rpx;
   margin-left: 20rpx;
   font-family: MicrosoftYaHei;
 	font-weight: normal;
 	font-stretch: normal;
+  width: 600rpx;
 }
 .person-line {
-  width: 100%;
+  width: 660rpx;
   height: 2rpx;
   background: #ededed;
   margin-left: 90rpx;

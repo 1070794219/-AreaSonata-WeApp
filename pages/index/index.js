@@ -8,6 +8,7 @@ Page({
     headimg:''
   },
   onLoad: function (options) {
+
     if (!app.globalData.userInfo) {
       wx.showModal({
         title: '提示',
