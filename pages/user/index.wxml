@@ -23,7 +23,7 @@
       </view>
     </navigator>
     <view class="person-line"></view>
-    <navigator url='/pages/user/user-information/index'>
+    <navigator url='/pages/myMark/index'>
       <view class="list-item">
         <image class="item-image" src="/images/icon/bjgd.jpg"></image>
         <text class="item-text">我标记过的物品</text>

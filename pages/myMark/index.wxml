@@ -1,0 +1,66 @@
+<!--pages/myMark/index.wxml-->
+<view class="myMark-cell">
+  <view class='cell-tip'></view>
+  <view class='cell-line'></view>
+  <view class='cell-body'>
+    
+    <view class='body-header'>
+      MacBook Pro
+      <view class='body-edit'>编辑</view>
+    </view>
+    <view class='body-status'>
+      异常
+    </view>
+    <view class='body-desc'>
+      这个电脑对我很重要，如果有好心人捡起，请联系我。手机号13001278099
+    </view>
+    <view class='body-image'>
+      <image src='http://pics.sc.chinaz.com/files/pic/pic9/201805/wpic1107.jpg' width="615rpx" height="410rpx" ></image>
+    </view>
+  </view>
+  <view class='clear'></view>
+</view>
+
+<view class="myMark-cell">
+  <view class='cell-tip'></view>
+  <view class='cell-line'></view>
+  <view class='cell-body'>
+    
+    <view class='body-header'>
+      MacBook Pro
+      <view class='body-edit'>编辑</view>
+    </view>
+    <view class='body-status'>
+      异常
+    </view>
+    <view class='body-desc'>
+      长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试长文本测试
+    </view>
+    <view class='body-image'>
+      <image src='http://pics.sc.chinaz.com/files/pic/pic9/201805/wpic1107.jpg' width="615rpx" height="410rpx" ></image>
+    </view>
+  </view>
+  <view class='clear'></view>
+</view>
+
+<view class="myMark-cell">
+  <view class='cell-tip'></view>
+  <view class='cell-line'></view>
+  <view class='cell-body'>
+    
+    <view class='body-header'>
+      MacBook Pro
+      <view class='body-edit'>编辑</view>
+    </view>
+    <view class='body-status'>
+      异常
+    </view>
+    <view class='body-desc'>
+      这个电脑对我很重要，如果有好心人捡起，请联系我。手机号13001278099
+    </view>
+    <view class='body-image'>
+
+    </view>
+  </view>
+  <view class='clear'></view>
+</view>
