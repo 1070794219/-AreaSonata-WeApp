@@ -5,10 +5,13 @@ const app = getApp()
 Page({
   data: {
     nickname:'',
-    headimg:''
+    headimg:'',
+    isLogin:false
   },
   onLoad: function (options) {
+  },
 
+  onShow: function(){
     if (!app.globalData.userInfo) {
       wx.showModal({
         title: '提示',
@@ -21,11 +24,13 @@ Page({
           }
         }
       })
+    } else {
+      this.setData({
+        isLogin: true,
+        nickname: app.globalData.userInfo['nickname'],
+        headimg: app.globalData.userInfo['headimg']
+      })
     }
-  },
-
-  onShow: function(){
-    
   },
 
   //商城
