@@ -59,6 +59,7 @@ view{
 }
 
 .header-body{
+  font-size: 50rpx;
   height: 340rpx;
 }
 
@@ -80,16 +81,18 @@ view{
 .header-image .add{
   width: 70rpx;
   height: 70rpx;
-   padding: 35rpx; 
+   padding: 44rpx; 
   border-radius: 10rpx;
   border-width: 2rpx;
   border-color: lightgray;
   border-style: solid
 }
+
 .header-image .add image{
   width: 70rpx;
   height: 70rpx;
 }
+
 
 .bottom-name,.bottom-status{
   width: 700rpx;

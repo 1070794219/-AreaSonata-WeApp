@@ -7,44 +7,57 @@
 <view class='user-table'>
   <view class="separate"></view>
   <view class="person-list">
-    <view class="list-item">
-      <image class="item-image" src="/images/icon/geren.jpg"></image>
-      <text class="item-text">个人信息</text>
-      <image class="item-right" src='/images/icon/nav-right.png'></image>
-    </view>
+    <navigator url='/pages/user/user-information/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/geren.jpg"></image>
+        <text class="item-text">个人信息</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
     <view class="person-line"></view>
-    <view class="list-item">
-      <image class="item-image" src="/images/icon/saoma.jpg"></image>
-      <text class="item-text">我的寻物码</text>
-      <image class="item-right" src='/images/icon/nav-right.png'></image>
-    </view>
+    <navigator url='/pages/user/user-information/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/saoma.jpg"></image>
+        <text class="item-text">我的寻物码</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
     <view class="person-line"></view>
-    <view class="list-item">
-      <image class="item-image" src="/images/icon/bjgd.jpg"></image>
-      <text class="item-text">我标记过的物品</text>
-      <image class="item-right" src='/images/icon/nav-right.png'></image>
-    </view>
+    <navigator url='/pages/user/user-information/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/bjgd.jpg"></image>
+        <text class="item-text">我标记过的物品</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
     <view class="person-line"></view>
-    <view class="list-item">
-      <image class="item-image" src="/images/icon/liaojie.jpg"></image>
-      <text class="item-text">了解蝴蝶寻物</text>
-      <image class="item-right" src='/images/icon/nav-right.png'></image>
-    </view>
+    <navigator url='/pages/user/user-information/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/liaojie.jpg"></image>
+        <text class="item-text">了解蝴蝶寻物</text>
+         <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
   </view>
 
   <view class="separate"></view>
   <view class="person-list">
-    <view class="list-item">
-      <image class="item-image" src="/images/icon/yijian.jpg"></image>
-      <text class="item-text">意见反馈</text>
-      <image class="item-right" src='/images/icon/nav-right.png'></image>
-    </view>
+    <navigator url='/pages/user/feedback/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/yijian.jpg"></image>
+        <text class="item-text">意见反馈</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+       </view>
+    </navigator>
+    
     <view class="person-line"></view>
-    <view class="list-item">
-      <image class="item-image" src="/images/icon/shezhi.jpg"></image>
-      <text class="item-text">设置</text>
-      <image class="item-right" src='/images/icon/nav-right.png'></image>
-    </view>
+    <navigator url='/pages/user/feedback/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/shezhi.jpg"></image>
+        <text class="item-text">设置</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
   </view>
 
   <view class="separate"></view>

@@ -1,0 +1,50 @@
+page{
+  background: #46489d;
+}
+.a{
+  display: block;
+}/* 竖直排列 */
+
+.b{
+  display: flex;
+  justify-content: center;
+}/* 水平居中 */
+.c{
+   display: flex; 
+  justify-content: center;
+  align-items: center;
+}/* 垂直水平居中 */
+.d{
+  display: flex; 
+}/* 水平排列 */
+.diva{
+  height:400rpx;
+  width:100%;
+   /* background:yellow;  */
+  /* border-top-left-radius:20rpx; */
+  /* border-top-right-radius:20rpx; */
+}
+.divb{
+  min-height:10rpx;
+  width:100%;
+   /* background:green;  */
+}
+.divc{
+  height:200rpx;
+  width:100%;
+   /* background:pink;   */
+}
+.divd{
+  height:100rpx;
+  width:100%;
+   /* background:blue;  */
+  /* border-bottom-left-radius:20rpx;
+  border-bottom-right-radius:20rpx; */
+}
+.linea{
+    height: 2rpx;
+    width:100%;
+    background: #ccc;
+    margin-top:20rpx;
+    margin-bottom:20rpx;
+}

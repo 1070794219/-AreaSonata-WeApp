@@ -1,0 +1,25 @@
+<view class='a'>
+  <view style="height:80rpx;width:100%;background:translate"></view> <!--占位专用div-->
+  <view class='b'>
+    <view style="min-height:100rpx;width:640rpx;background:white;border-radius:20rpx / 40rpx;           "class='a'>
+      <view class='c diva'>
+        <view class='a'>
+          <view>头像（不会弄）</view>
+          <view>昵称（不会弄）</view>
+        </view>
+      </view><!--头像与昵称  -->
+      <view class='linea'></view><!--分割线  -->
+      <view class='d divb'>
+        <view style='height:100%;width:100rpx'>icon</view>
+        <view class='a'>
+          <view style='min-height:100rpx;width:540rpx;font-size:30rpx;'>这是我的U盘不小心被我弄掉了，好伤心啊，你要是捡到了，就通过手机号13888888888联系我，必有重赏</view>
+          <view class='linea'></view>
+        </view>
+      </view><!--主人留言  -->
+      <view class='c divc'>图片</view><!--物品图片（后端判断）  -->
+      <view class='c divd'>
+        <button style='width:240rpx;height:70rpx;background:#46489d;color:white;' class='c'>联系失主</button>
+      </view><!--联系主人按钮  -->
+    </view>
+  </view>  <!--主体内容-->
+</view>
