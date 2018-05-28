@@ -1,15 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    
+    "pages/chat/private-chat/index",
+    "pages/chat/index",
     "pages/articals-info/index",
     "pages/mark/mark",
     "pages/user/index",
     "pages/user/feedback/index",
     "pages/myMark/index",
-    "pages/chat/index",
     "pages/user/my-articals/index",
-    
     "pages/logs/logs"
   ],
   "window": {
