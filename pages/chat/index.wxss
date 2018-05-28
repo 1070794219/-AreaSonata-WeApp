@@ -13,6 +13,10 @@
 .d{
   display: flex; 
 }/* 水平排列 */
+.e{
+    display: flex; 
+    align-items: center;
+}/* 垂直居中 */
 /*↑↑↑↑↑↑↑↑↑↑↑↑布局专用CSS↑↑↑↑↑↑↑↑↑↑------↓↓↓↓↓↓↓↓↓↓↓↓↓CSS↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 page{
   /* background-color: green; */
