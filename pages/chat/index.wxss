@@ -69,6 +69,13 @@ page{
 	width:100rpx;
 	height:100rpx;
 }
+
+.user-img image{
+  display:block;
+	border-radius:50%;
+	width:100rpx;
+	height:100rpx;
+}
 .red-dot{
   display:block;
 	background:#f00;

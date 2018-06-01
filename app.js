@@ -2,6 +2,7 @@
 App({
   data:{
     hostUrl: 'https://bfapi.xuzhengke.cn/index.php/Api',
+    uploadUrl: 'https://bfapi.xuzhengke.cn/Uploads/'
   },
 
   onLaunch: function () {

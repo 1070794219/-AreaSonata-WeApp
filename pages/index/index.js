@@ -4,14 +4,19 @@ const app = getApp()
 
 Page({
   data: {
-    nickname:'',
-    headimg:'',
+    nickname:'请登录',
+    headimg:'/images/icon/1.png',
     isLogin:false
   },
   onLoad: function (options) {
+    this.login();
   },
 
   onShow: function(){
+    this.login();
+  },
+
+  login: function(){
     if (!app.globalData.userInfo) {
       wx.showModal({
         title: '提示',

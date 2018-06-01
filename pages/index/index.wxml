@@ -22,8 +22,8 @@
   </view>
   <navigator url="/pages/user/index">
     <view class='index-list-cell'>
-      <image src="{{ headimg === '' ? '/images/icon/1.png' : headimg}}" class='headimg'></image>
-      <label>{{ nickname === '' ? '请登录' : nickname}}</label>
+      <image src="{{ headimg }}" class='headimg'></image>
+      <label>{{ nickname }}</label>
     </view>
   </navigator>
 </view>

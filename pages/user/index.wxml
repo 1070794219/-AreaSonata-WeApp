@@ -58,6 +58,21 @@
         <image class="item-right" src='/images/icon/nav-right.png'></image>
       </view>
     </navigator>
+    <view class="person-line"></view>
+    <navigator url='/pages/scan/index?t_id=f47c330753c726218d15c3d0bf6b0967'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/shezhi.jpg"></image>
+        <text class="item-text">测试(已标记)</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
+    <navigator url='/pages/scan/index?t_id=142ef607b47cc14c88cafcd0e22d47b6'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/shezhi.jpg"></image>
+        <text class="item-text">测试(未标记)</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
   </view>
 
   <view class="separate"></view>

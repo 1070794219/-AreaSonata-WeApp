@@ -66,6 +66,7 @@ view{
 .header-image{
   height: 160rpx;
   padding-top: 20rpx;
+  float: left
   /* background: red */
 }
 
@@ -81,11 +82,12 @@ view{
 .header-image .add{
   width: 70rpx;
   height: 70rpx;
-   padding: 44rpx; 
+  padding: 44rpx; 
   border-radius: 10rpx;
   border-width: 2rpx;
   border-color: lightgray;
-  border-style: solid
+  border-style: solid;
+  float: left
 }
 
 .header-image .add image{
@@ -174,4 +176,13 @@ view{
 .bottom-btns .submit{
   width: 450rpx !important;
   background: #45489d
+}
+
+.has-add {
+  padding: 0rpx !important;
+  border-width: 0rpx !important;
+}
+.has-add image{
+  width: 162rpx !important;
+  height: 162rpx !important;
 }

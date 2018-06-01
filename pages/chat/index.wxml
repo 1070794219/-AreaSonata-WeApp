@@ -3,63 +3,29 @@
   <view class='c header'>这个是开关</view>
   <view class='separate'></view> 
 <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑头部开关↑↑↑↑↑↑↑↑↑↑------↓↓↓↓↓↓↓↓↓↓↓↓↓消息列表↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
-  <view class='a body'>    
-    <view class='d diva'> 
-      <view class='c divaa'> 
-         <view class='user-img'></view> <!-- 头像  -->
-      </view>  
-      <view class='e divab'>
-        <view class='a'>
-          <view class='username'>遇见一只ke爱的Sonata</view> 
-          <view class='tip'>发来一条私信</view>        
-        </view> 
-      </view> <!-- 昵称与最近消息 -->
-        <view class='a divac'> 
-         <view id='divac-zhan-wei-1'></view>
-         <view class='b'>
-          <view class='time'>下午17:22</view> 
-         </view>
-         <view class='red-dot'></view> 
-      </view>   <!-- 时间与提醒 -->
-    </view>  
-    <view class='separate-line'></view> <!-- 分割线 --> 
-    <view class='d diva'> 
-      <view class='c divaa'> 
-         <view class='user-img'></view> <!-- 头像  -->
-      </view>  
-      <view class='e divab'>
-        <view class='a'>
-          <view class='username'>遇见一只ke爱的Sonata</view> 
-          <view class='tip'>发来一条私信</view>        
-        </view> 
-      </view> <!-- 昵称与最近消息 -->
-        <view class='a divac'> 
-         <view id='divac-zhan-wei-1'></view>
-         <view class='b'>
-          <view class='time'>下午17:22</view> 
-         </view>
-         <view class='red-dot'></view> 
-      </view>   <!-- 时间与提醒 -->
-    </view>  
-    <view class='separate-line'></view> <!-- 分割线 --> 
+  <view class='a body'> 
+    <block wx:for="{{messages}}">   
+      <navigator url="/pages/chat/private-chat/index?id={{item.chat_id}}">
         <view class='d diva'> 
-      <view class='c divaa'> 
-         <view class='user-img'></view> <!-- 头像  -->
-      </view>  
-      <view class='e divab'>
-        <view class='a'>
-          <view class='username'>遇见一只ke爱的Sonata</view> 
-          <view class='tip'>发来一条私信</view>        
+          <view class='c divaa'> 
+            <view class='user-img'><image src='{{item.headimg}}'></image></view> <!-- 头像  -->
+          </view>  
+          <view class='e divab'>
+            <view class='a'>
+              <view class='username'>{{item.nickname}}</view> 
+              <view class='tip'>发来一条私信</view>        
+            </view> 
+          </view> <!-- 昵称与最近消息 -->
+            <view class='a divac'> 
+            <view id='divac-zhan-wei-1'></view>
+            <view class='b'>
+              <view class='time'>{{item.time}}</view> 
+            </view>
+            <view class='red-dot' wx:if="{{item.status == 0}}"></view> 
+          </view>   <!-- 时间与提醒 -->
         </view> 
-      </view> <!-- 昵称与最近消息 -->
-        <view class='a divac'> 
-         <view id='divac-zhan-wei-1'></view>
-         <view class='b'>
-          <view class='time'>下午17:22</view> 
-         </view>
-         <view class='red-dot'></view> 
-      </view>   <!-- 时间与提醒 -->
-    </view>  
-
+      </navigator> 
+      <view class='separate-line'></view> <!-- 分割线 --> 
+    </block>
   </view>   
 </view>
