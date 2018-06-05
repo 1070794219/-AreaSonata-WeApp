@@ -3,6 +3,23 @@ page{
   background: #f5f5f5;
 }
 
+.icon {
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  float: left
+}
+.icon-label{
+  width: auto;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+  float: left;
+  margin-left: 10rpx;
+  padding-bottom: 20rpx;
+}
+
+
 .myMark-cell{
   width: 750rpx;
   height: auto;
@@ -65,5 +82,5 @@ page{
   float: left;
   position: absolute;
   bottom: 50rpx;
-  left: 20rpx;
+  left: 25rpx;
 }

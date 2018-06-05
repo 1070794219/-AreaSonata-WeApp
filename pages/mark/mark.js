@@ -11,17 +11,27 @@ Page({
     image:'', //上传图片
     temp_image: '', //图片相对路径
     name: '',
-    desc: ''
+    desc: '',
+    edit:false,
+    gua: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    
     this.setData({
       code: options.code
     });
     console.log(options.code);
+
+    //编辑状态
+    if (options.edit == 'true') {
+      this.data.edit = true;
+      console.log("编辑状态");
+      this.loadData();
+    }
   },
 
   //选择照片
@@ -116,7 +126,8 @@ Page({
         body: data.desc,
         image: data.temp_image,
         code: data.code,
-        status: 0
+        status: 0,
+        type: 'edit'
       },
       header: {
         'Content-Type': 'application/x-www-form-urlencoded'
@@ -155,8 +166,111 @@ Page({
   },
 
   onUnload: function () {
-    wx.redirectTo({
-      url: '/pages/index/index',
+    // wx.redirectTo({
+    //   url: '/pages/index/index',
+    // })
+  },
+
+  //编辑状态
+  loadData: function(){
+    var that = this;
+
+    wx.showLoading({
+      title: '加载中',
     })
+    wx.request({
+      url: app.data.hostUrl + '/Mark/myMark',
+      method: 'get',
+      data: {
+        id: app.globalData.userInfo['id'],
+        code: that.data.code
+      },
+      header: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      success: function (res) {
+        wx.hideLoading();
+        // --init data      
+        
+        var data = res.data;
+        if (data.status == 0) {
+          //获取成功
+          data = data.res[0];
+          that.setData({
+            image: data.image, //上传图片
+            temp_image: data.temp_image, //图片相对路径
+            name: data.title,
+            desc: data.body
+          })
+
+          if(data.status == '正常'){
+            that.setData({
+              gua: false
+            })
+          }else{
+            that.setData({
+              gua: true
+            })
+          }
+        } else {
+          wx.showModal({
+            title: '警告',
+            content: data.err,
+            showCancel: false
+          })
+        }
+      },
+      fail: function (e) {
+        wx.showToast({
+          title: '网络异常！err:getsessionkeys',
+          duration: 2000
+        });
+      },
+    });
+  },
+
+  /**
+   * 挂失
+   */
+  gua: function(e){
+    var that = this;
+    wx.request({
+      url: app.data.hostUrl + '/Mark/gua',
+      method: 'post',
+      data: {
+        id: app.globalData.userInfo['id'],
+        code: that.data.code
+      },
+      header: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      success: function (res) {
+        // --init data      
+
+        var data = res.data;
+        console.log(data);
+        if (data.status == 0) {
+          //获取成功
+          that.setData({
+            gua: !that.data.gua
+          });
+          wx.showToast({
+            title: (that.data.gua ? "挂失" : "解除") + '成功',
+          })
+        } else {
+          wx.showModal({
+            title: '警告',
+            content: data.err,
+            showCancel: false
+          })
+        }
+      },
+      fail: function (e) {
+        wx.showToast({
+          title: '网络异常！err:getsessionkeys',
+          duration: 2000
+        });
+      },
+    });
   }
 })
