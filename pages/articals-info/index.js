@@ -96,10 +96,9 @@ Page({
       },
     });
   },
-  onUnload: function(){
-    wx.navigateBack({
-      delta: 2
-    })
-  }
 
+    onUnload: function () {
+      wx.navigateTo({url:'pages/index'})
+    }
+  
 })
