@@ -5,7 +5,7 @@ const app = getApp()
 Page({
   data: {
     nickname:'请登录',
-    headimg:'/images/icon/1.png',
+    headimg:'',
     isLogin:false
   },
   onLoad: function (options) {
@@ -13,7 +13,7 @@ Page({
   },
 
   onShow: function(){
-    this.login();
+    // this.login();
   },
 
   login: function(){
@@ -44,5 +44,35 @@ Page({
       title: '开发中',
       icon: 'loading'
     })
-  }
+  },
+
+  //扫码
+  scan: function () {
+    var that = this;
+    var show;
+    wx.scanCode({
+      success: (res) => {
+        console.log(res);
+        //扫码成功
+        var src = decodeURIComponent(res.path);
+        var n = src.search(/=/);
+        var code = src.substr(n + 1);
+        wx.navigateTo({
+          url: '/pages/scan/index?t_id=' + code,
+        })
+      },
+      fail: (res) => {
+        wx.showToast({
+          title: '扫码失败',
+          icon: 'success',
+          duration: 2000
+        })
+        wx.navigateBack({
+          delta: 1
+        });
+      },
+      complete: (res) => {
+      }
+    })
+  },
 })

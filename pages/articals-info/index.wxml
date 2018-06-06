@@ -12,7 +12,7 @@
       <view class='d divb'>
         <view style='height:100%;width:100rpx'><image src='/images/icon/liuyan.jpg' class='icon'></image></view>
         <view class='a'>
-          <view style='min-height:100rpx;width:540rpx;font-size:30rpx;'>{{ data['desc'] }}</view>
+          <view style='min-height:100rpx;width:520rpx;font-size:30rpx;'>{{ data['desc'] }}</view>
           <view class='linea'></view>
         </view>
       </view><!--主人留言  -->

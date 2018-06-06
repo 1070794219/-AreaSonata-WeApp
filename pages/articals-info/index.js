@@ -25,7 +25,7 @@ Page({
     wx.showLoading({
       title: '数据加载中',
     });
-    this.loadData("f47c330753c726218d15c3d0bf6b0967");
+    this.loadData(options.code);
   },
 
   //请求数据
@@ -95,5 +95,11 @@ Page({
         });
       },
     });
+  },
+  onUnload: function(){
+    wx.navigateBack({
+      delta: 2
+    })
   }
+
 })

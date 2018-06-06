@@ -4,12 +4,11 @@
 </view>
 
 <view class='index-list'>
-  <navigator url="/pages/mark/mark">
-    <view class='index-list-cell'>
-      <image src='/images/icon/1.png'></image>
-      <label>标记物品</label>
-    </view>
-  </navigator>
+  
+  <view class='index-list-cell' bindtap='scan'>
+    <image src='/images/icon/1.png'></image>
+    <label>标记物品</label>
+  </view>
   <navigator url="/pages/chat/index">
   <view class='index-list-cell'>
     <image src='/images/icon/2.png'></image>
@@ -22,7 +21,8 @@
   </view>
   <navigator url="/pages/user/index">
     <view class='index-list-cell'>
-      <image src="{{ headimg }}" class='headimg'></image>
+      <image src="/images/icon/1.png" class='headimg' wx:if="{{ !isLogin }}"></image>
+      <image src="{{ headimg }}" class='headimg' wx:else></image>
       <label>{{ nickname }}</label>
     </view>
   </navigator>

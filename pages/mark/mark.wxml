@@ -53,7 +53,7 @@
 </view>
 
 <!-- 底部按钮 -->
-<view class='bottom-btns' wx:if="{{ edit }}">
+<view class='bottom-btns' wx:if="{{ !edit }}">
   <view class='cancel' bindtap='cancel'>取消</view>
   <view class='submit' bindtap='submit'>标记完成</view>
 </view>

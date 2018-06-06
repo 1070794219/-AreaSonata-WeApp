@@ -28,7 +28,9 @@ Page({
 
     //编辑状态
     if (options.edit == 'true') {
-      this.data.edit = true;
+      this.setData({
+        edit: true
+      })
       console.log("编辑状态");
       this.loadData();
     }
@@ -127,7 +129,7 @@ Page({
         image: data.temp_image,
         code: data.code,
         status: 0,
-        type: 'edit'
+        type: (that.data.edit ? 'edit' : '')
       },
       header: {
         'Content-Type': 'application/x-www-form-urlencoded'
@@ -166,9 +168,17 @@ Page({
   },
 
   onUnload: function () {
-    // wx.redirectTo({
-    //   url: '/pages/index/index',
-    // })
+    if(this.data.edit){
+      //编辑状态 返回个人中心
+      wx.redirectTo({
+        url: '/pages/user/index',
+      })
+    }else{
+      wx.navigateBack({
+        delta: 2
+      })
+    }
+    
   },
 
   //编辑状态
