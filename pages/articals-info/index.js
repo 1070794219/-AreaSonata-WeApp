@@ -84,7 +84,7 @@ Page({
         res = res.data;
         var chat_id = res['chat_id'];
 
-        wx.redirectTo({
+        wx.navigateTo({
           url: '/pages/chat/private-chat/index?id=' + chat_id,
         });
       },
