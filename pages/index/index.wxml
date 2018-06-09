@@ -15,10 +15,13 @@
     <label>消息列表</label>
   </view>
   </navigator>
-  <view class='index-list-cell' bindtap='shopTap'>
+  <navigator url="/pages/developing/index">
+    <view class='index-list-cell' bindtap='shopTap'>
     <image src='/images/icon/3.png'></image>
     <label>蝴蝶商城</label>
-  </view>
+    </view>
+  </navigator>
+  
   <navigator url="/pages/user/index">
     <view class='index-list-cell'>
       <image src="/images/icon/1.png" class='headimg' wx:if="{{ !isLogin }}"></image>

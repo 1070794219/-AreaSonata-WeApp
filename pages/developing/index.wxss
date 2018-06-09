@@ -1,4 +1,5 @@
-/* pages/user/feedback/index.wxss */
+/* pages/developing/index.wxss */
+
 .a{
   display: block;
 }

@@ -25,7 +25,6 @@
           </view>   <!-- 时间与提醒 -->
         </view> 
       </navigator> 
-      <view class='separate-line'></view> <!-- 分割线 --> 
     </block>
   </view>   
 </view>

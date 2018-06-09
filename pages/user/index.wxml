@@ -7,7 +7,7 @@
 <view class='user-table'>
   <view class="separate"></view>
   <view class="person-list">
-    <navigator url='/pages/user/user-information/index'>
+    <navigator url='/pages/developing/index'>
       <view class="list-item">
         <image class="item-image" src="/images/icon/geren.jpg"></image>
         <text class="item-text">个人信息</text>
@@ -15,7 +15,7 @@
       </view>
     </navigator>
     <view class="person-line"></view>
-    <navigator url='/pages/user/user-information/index'>
+    <navigator url='/pages/developing/index'>
       <view class="list-item">
         <image class="item-image" src="/images/icon/saoma.jpg"></image>
         <text class="item-text">我的寻物码</text>
@@ -31,7 +31,7 @@
       </view>
     </navigator>
     <view class="person-line"></view>
-    <navigator url='/pages/user/user-information/index'>
+    <navigator url='/pages/developing/index'>
       <view class="list-item">
         <image class="item-image" src="/images/icon/liaojie.jpg"></image>
         <text class="item-text">了解蝴蝶寻物</text>
@@ -50,29 +50,15 @@
        </view>
     </navigator>
     
-    <view class="person-line"></view>
-    <navigator url='/pages/user/feedback/index'>
+     <view class="person-line"></view>
+    <navigator url='/pages/developing/index'>
       <view class="list-item">
         <image class="item-image" src="/images/icon/shezhi.jpg"></image>
         <text class="item-text">设置</text>
         <image class="item-right" src='/images/icon/nav-right.png'></image>
       </view>
-    </navigator>
-    <view class="person-line"></view>
-    <navigator url='/pages/scan/index?t_id=f47c330753c726218d15c3d0bf6b0967'>
-      <view class="list-item">
-        <image class="item-image" src="/images/icon/shezhi.jpg"></image>
-        <text class="item-text">测试(已标记)</text>
-        <image class="item-right" src='/images/icon/nav-right.png'></image>
-      </view>
-    </navigator>
-    <navigator url='/pages/scan/index?t_id=142ef607b47cc14c88cafcd0e22d47b6'>
-      <view class="list-item">
-        <image class="item-image" src="/images/icon/shezhi.jpg"></image>
-        <text class="item-text">测试(未标记)</text>
-        <image class="item-right" src='/images/icon/nav-right.png'></image>
-      </view>
-    </navigator>
+    </navigator> 
+
   </view>
 
   <view class="separate"></view>
