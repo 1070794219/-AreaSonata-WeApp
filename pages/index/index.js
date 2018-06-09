@@ -10,6 +10,13 @@ Page({
   },
   onLoad: function (options) {
     this.login();
+    //获取小程序码
+    if(options.t_id != null){
+      //扫码进入
+      wx.navigateTo({
+        url: '/pages/scan/index?t_id=' + options.t_id,
+      })
+    }
   },
 
   onShow: function(){
