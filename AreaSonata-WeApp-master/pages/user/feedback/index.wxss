@@ -1,0 +1,17 @@
+/* pages/user/feedback/index.wxss */
+.a{
+  display: block;
+}
+.b{
+  display: flex;
+  justify-content: center;
+}
+.c{
+   display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+#logo{
+  height: 300rpx;
+  width:300rpx;
+}

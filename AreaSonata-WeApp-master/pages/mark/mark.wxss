@@ -1,0 +1,188 @@
+/* pages/mark/mark.wxss */
+
+.header-name,.header-body{
+    border-bottom: 2rpx lightgray solid;
+}
+view{
+  width: 750rpx;
+}
+
+.body-header{
+  height: 695rpx;
+  background: white
+}
+
+.body-header view{
+  width: 700rpx;
+  margin: 0 25rpx;
+}
+
+.body-bottom{
+  height: 210rpx;
+  margin-top: 20rpx;
+  background: white;
+}
+
+.header-name{
+  width: 700rpx;
+  margin: 0 25rpx;
+  height: 135rpx;
+}
+
+.header-name .name ,.body-bottom .name{
+  display: block;
+	width: 600rpx;
+	height: 50rpx;
+  padding-top: 30rpx;
+	font-size: 30rpx;
+	letter-spacing: 1rpx;
+	color: #999999;
+}
+
+.item-name{
+  width: 480rpx;
+  float: left;
+  padding-left: 10rpx;
+}
+
+.header-name .tip {
+  display: block;
+  float: left;
+  width: 180rpx;
+	height: 50rpx;
+  padding-right: 20rpx;
+  line-height: 50rpx;
+	font-size: 24rpx;
+	letter-spacing: 1rpx;
+	color: #999999;
+  text-align: right
+}
+
+.header-body{
+  font-size: 50rpx;
+  height: 340rpx;
+}
+
+.header-image{
+  height: 160rpx;
+  padding-top: 20rpx;
+  float: left
+  /* background: red */
+}
+
+.header-body textarea{
+  font-size: 24rpx;
+  background: black;
+  width: 100%;
+  height: 300rpx;
+  margin: 20rpx 0;
+  background: white
+}
+
+.header-image .add{
+  width: 70rpx;
+  height: 70rpx;
+  padding: 44rpx; 
+  border-radius: 10rpx;
+  border-width: 2rpx;
+  border-color: lightgray;
+  border-style: solid;
+  float: left
+}
+
+.header-image .add image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+
+.bottom-name,.bottom-status{
+  width: 700rpx;
+  margin: 0 25rpx;
+}
+
+.bottom-status{
+  height: 30rpx;
+  padding: 30rpx 0;
+  /* background: red */
+}
+
+.bottom-status label{
+  display: block;
+  float: left;
+  width: auto;
+  height: 50rpx;
+  font-size: 25rpx;
+  line-height: 50rpx;
+  padding: 0 30rpx;
+  margin: 0 15rpx;
+  border-radius:50rpx;
+  border: 1rpx solid lightgray
+}
+
+.mark-bottom{
+  width: 100%;
+  height: 100rpx;
+  /* background: red */
+}
+
+.tip-icon,.tip-url{
+  height: 100rpx;
+  float: left;
+}
+
+.tip-icon{
+  width: 35%;
+  /* background: yellow */
+}
+
+.tip-url{
+  width: 30%;
+}
+
+.tip-url label{
+  display: inline-block;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 25rpx;
+  color: #45489d;
+  text-align: center
+}
+
+.bottom-btns{
+  width: 100%;
+  height: 90rpx;
+  position: fixed;
+  bottom: 0;
+  background: red
+}
+
+.bottom-btns view{
+  height: 90rpx;
+  line-height: 90rpx;
+  color: white;
+  font-size: 36rpx;
+  text-align: center;
+  float: left;
+  font-weight: normal;
+}
+
+.bottom-btns .cancel{
+  width: 300rpx !important;
+  background: #999999
+}
+
+.bottom-btns .submit{
+  width: 450rpx !important;
+  background: #45489d
+}
+
+.has-add {
+  padding: 0rpx !important;
+  border-width: 0rpx !important;
+}
+.has-add image{
+  width: 162rpx !important;
+  height: 162rpx !important;
+}

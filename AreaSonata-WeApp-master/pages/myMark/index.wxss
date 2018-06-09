@@ -1,0 +1,86 @@
+/* pages/myMark/index.wxss */
+page{
+  background: #f5f5f5;
+}
+
+.icon {
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  float: left
+}
+.icon-label{
+  width: auto;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+  float: left;
+  margin-left: 10rpx;
+  padding-bottom: 20rpx;
+}
+
+
+.myMark-cell{
+  width: 750rpx;
+  height: auto;
+  /* background: red; */
+  overflow: hidden;
+  position: relative
+}
+
+/* 竖线 */
+.myMark-cell .cell-line{
+  width: 5rpx;
+  height: 100%;
+  margin-left: 30rpx;
+  /* margin-right: 25rpx; */
+  background: #e2e6e9;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* 右侧主体*/
+.myMark-cell .cell-body{
+  width: 665rpx;
+  height: auto;
+  margin: 25rpx;
+  background: white;
+  float: right;
+  border-radius: 20rpx;
+}
+
+.cell-body view{
+  width: 615rpx;
+  margin: 20rpx 25rpx;
+  height: auto;
+  color:#4d4d4d;
+  font-size: 35rpx;
+}
+
+.body-image image{
+  max-width: 555rpx;
+  margin: 0 25rpx;
+  max-height: 380rpx;
+  border-radius: 30rpx;
+}
+
+.body-edit{
+  width:100rpx !important;  
+  margin: 0 !important;
+  color:#454a9c !important;
+  float: right;
+}
+
+.cell-tip{
+  border: 10px solid #f5f5f5;
+  border-right-color: #fff;
+  width: 0;
+  height: 0;
+  float: left;
+  position: absolute;
+  bottom: 50rpx;
+  left: 25rpx;
+}

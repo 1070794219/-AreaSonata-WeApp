@@ -1,0 +1,13 @@
+<!--pages/user/feedback/index.wxml-->
+<view class='a'>
+  <view style="height:50rpx;width:100%;background:translate"></view>
+  <view class='b'>
+    <view style="height:100rpx;width:96%;background:white;border-radius:10rpx;              " class='c'>
+    <text>问题反馈请加入QQ群：664150629</text>  
+    </view>
+  </view>
+  <view style="height:300rpx;width:100%;background:translate"></view>
+   <view class='b'>
+    <image src="/images/logo.png" id='logo'></image>
+  </view> 
+</view>

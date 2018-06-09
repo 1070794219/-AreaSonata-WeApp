@@ -1,0 +1,70 @@
+/* pages/user/index.wxss */
+
+.bg-color{
+  background: #46489d
+}
+
+.user-header{
+  width: 750rpx;
+  height: 240rpx;
+  padding-top: 42.5rpx;
+}
+
+.header-img{
+  display: block;
+  width: 155rpx;
+  height: 155rpx;
+  background: white;
+  margin:0 auto;
+  border-radius: 77.5rpx;
+}
+
+/* 列表 */
+.person-list {
+   display: flex; 
+  flex-direction: column;
+  align-items: left;
+  background: white;
+}
+.list-item {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  height: 95rpx;
+  width: 100%;
+    /* background-color: pink;   */
+}
+.item-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+}
+.item-right{
+  width: 32rpx;
+  height: 32rpx;
+  margin: 31.5rpx 0rpx;
+}
+.item-text {
+  color: black;
+  display: inline-block;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  font-family: MicrosoftYaHei;
+	font-weight: normal;
+	font-stretch: normal;
+  width: 600rpx;
+}
+.person-line {
+  width: 660rpx;
+  height: 2rpx;
+  background: #ededed;
+  margin-left: 90rpx;
+}
+.separate{
+  height: 30rpx;
+}
+
+.login-btn{
+  background: white;
+  border-width: 0rpx;
+}

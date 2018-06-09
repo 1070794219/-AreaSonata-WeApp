@@ -1,0 +1,49 @@
+/**index.wxss**/
+.index-slide{
+  margin-top: 15rpx;
+}
+
+.index-slide,.index-slide image{
+  width: 750rpx;
+	height: 417rpx;
+}
+
+.index-list{
+  width: 750rpx;
+  margin-top: 20rpx;
+  height: 730rpx;
+}
+
+.index-list-cell{
+  width: 350rpx;
+  height: 340rpx;
+  margin: 12.5rpx;
+  float: left;
+  background: white;
+  border-radius: 20rpx;
+  box-shadow: 5rpx 5rpx 1rpx lightgray
+}
+
+.index-list-cell image{
+  width: 180rpx;
+  height: 180rpx;
+  margin: 50rpx 85rpx 0;
+}
+
+.index-list-cell label{
+  display: block;
+	width: 350rpx;
+	height: 100rpx;
+	font-family: SourceHanSansCN-Regular;
+	font-size: 32rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50rpx;
+	letter-spacing: 0px;
+	color: #5e68f4;
+  text-align: center
+}
+
+.index-list-cell .headimg{
+  border-radius: 90rpx;
+}

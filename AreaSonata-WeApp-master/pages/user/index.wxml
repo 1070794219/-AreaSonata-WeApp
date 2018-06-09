@@ -1,0 +1,68 @@
+<!--pages/user/index.wxml-->
+<view class='user-header bg-color'>
+  <image class='header-img' src="{{ headimg }}"></image>
+</view>
+
+<!-- cell -->
+<view class='user-table'>
+  <view class="separate"></view>
+  <view class="person-list">
+    <navigator url='/pages/developing/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/geren.jpg"></image>
+        <text class="item-text">个人信息</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
+    <view class="person-line"></view>
+    <navigator url='/pages/developing/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/saoma.jpg"></image>
+        <text class="item-text">我的寻物码</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
+    <view class="person-line"></view>
+    <navigator url='/pages/myMark/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/bjgd.jpg"></image>
+        <text class="item-text">我标记过的物品</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
+    <view class="person-line"></view>
+    <navigator url='/pages/developing/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/liaojie.jpg"></image>
+        <text class="item-text">了解蝴蝶寻物</text>
+         <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator>
+  </view>
+
+  <view class="separate"></view>
+  <view class="person-list">
+    <navigator url='/pages/user/feedback/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/yijian.jpg"></image>
+        <text class="item-text">意见反馈</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+       </view>
+    </navigator>
+    
+     <view class="person-line"></view>
+    <navigator url='/pages/developing/index'>
+      <view class="list-item">
+        <image class="item-image" src="/images/icon/shezhi.jpg"></image>
+        <text class="item-text">设置</text>
+        <image class="item-right" src='/images/icon/nav-right.png'></image>
+      </view>
+    </navigator> 
+
+  </view>
+
+  <view class="separate"></view>
+  <block wx:if="{{ !isLogin }}">
+    <button open-type="getUserInfo" class='login-btn' bindgetuserinfo="loginFunc">登录</button>
+  </block>
+</view>
