@@ -62,6 +62,7 @@ Page({
         console.log(res);
         //扫码成功
         var src = decodeURIComponent(res.path);
+        console.log(src);
         var n = src.search(/=/);
         var code = src.substr(n + 1);
         wx.navigateTo({

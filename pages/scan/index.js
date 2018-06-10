@@ -14,8 +14,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showModal({
+      title: '提示',
+      content: '检测到特征码为:' . options['t_id'],
+      showCancel: false
+    })
     this.setData({
-      code: options.t_id
+      code: options['t_id']
     });
     wx.showLoading({
       title: '查询中',
@@ -25,7 +30,8 @@ Page({
       url: app.data.hostUrl + '/Mark/searchCode',
       method: 'get',
       data: {
-        code: options.t_id
+        code: options['t_id'],
+        params: options
       },
       header: {
         'Content-Type': 'application/x-www-form-urlencoded'
